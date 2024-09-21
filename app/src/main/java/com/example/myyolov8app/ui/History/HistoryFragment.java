@@ -13,8 +13,6 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
-import android.os.storage.StorageManager;
-import android.os.storage.StorageVolume;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -85,10 +83,6 @@ public class HistoryFragment extends Fragment {
         pieChart = binding.piechart;
         getDataHistory();
 
-        // Creating a method setData()
-        // to set the text in text view and pie chart
-
-
 
         return root;
     }
@@ -104,7 +98,7 @@ public class HistoryFragment extends Fragment {
         inflater.inflate(R.menu.export_csv, menu);
         super.onCreateOptionsMenu(menu, inflater);
     }
-
+    //ok test
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if(item.getItemId()==R.id.export_csv){
