@@ -13,8 +13,6 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
-import android.os.storage.StorageManager;
-import android.os.storage.StorageVolume;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -84,7 +82,6 @@ public class HistoryFragment extends Fragment {
         lsv = binding.lsvHs;
         pieChart = binding.piechart;
         getDataHistory();
-// giả bộ sửa chổ này 1 cái
 
 
         return root;
