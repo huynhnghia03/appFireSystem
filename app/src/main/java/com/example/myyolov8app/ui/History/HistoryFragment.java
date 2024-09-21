@@ -84,10 +84,7 @@ public class HistoryFragment extends Fragment {
         lsv = binding.lsvHs;
         pieChart = binding.piechart;
         getDataHistory();
-
-        // Creating a method setData()
-        // to set the text in text view and pie chart
-
+// giả bộ sửa chổ này 1 cái
 
 
         return root;
