@@ -78,7 +78,7 @@ public class HistoryFragment extends Fragment {
         setHasOptionsMenu(true);
         tvbgS = binding.tvbgS;
         tvMdS = binding.tvMdS;
-        tvSmS = binding.tvSmS;
+
         lsv = binding.lsvHs;
         pieChart = binding.piechart;
         getDataHistory();
@@ -167,7 +167,7 @@ public class HistoryFragment extends Fragment {
     {
      tvbgS.setText(""+data.getBig());
      tvMdS.setText(""+data.getMedium());
-     tvSmS.setText(""+data.getSmall());
+
 
     if(data.getDatas().size()==0){
         pieChart.addPieSlice(
