@@ -11,40 +11,29 @@ public class HistoryData {
     private ArrayList<String[]> datas;
     private int total;
 
-    private int big;
+    private int fire;
 
-    private int medium;
+    private int smoke;
 
-    private int small;
     private int sumImgs;
 
     public HistoryData(Boolean auth) {
         this.auth = auth;
     }
 
-    public HistoryData(ArrayList<String[]> datas, int total, int big, int medium, int small) {
-        this.datas =  datas;
+    public HistoryData(ArrayList<String[]> datas, int total, int fire, int smoke, int sumImgs) {
+        this.datas = datas;
         this.total = total;
-        this.big = big;
-        this.medium = medium;
-        this.small = small;
-    }
-
-    public HistoryData(int total, int big, int medium, int small, int sumImgs) {
-        this.total = total;
-        this.big = big;
-        this.medium = medium;
-        this.small = small;
+        this.fire = fire;
+        this.smoke = smoke;
         this.sumImgs = sumImgs;
     }
 
-    public HistoryData(Boolean auth, ArrayList<String[]> datas, int total, int big, int medium, int small) {
-        this.auth = auth;
-        this.datas = datas;
+    public HistoryData(int total, int fire, int smoke, int sumImgs) {
         this.total = total;
-        this.big = big;
-        this.medium = medium;
-        this.small = small;
+        this.fire = fire;
+        this.smoke = smoke;
+        this.sumImgs = sumImgs;
     }
 
     public Boolean getAuth() {
@@ -71,28 +60,20 @@ public class HistoryData {
         this.total = total;
     }
 
-    public int getBig() {
-        return big;
+    public int getFire() {
+        return fire;
     }
 
-    public void setBig(int big) {
-        this.big = big;
+    public void setFire(int fire) {
+        this.fire = fire;
     }
 
-    public int getMedium() {
-        return medium;
+    public int getSmoke() {
+        return smoke;
     }
 
-    public void setMedium(int medium) {
-        this.medium = medium;
-    }
-
-    public int getSmall() {
-        return small;
-    }
-
-    public void setSmall(int small) {
-        this.small = small;
+    public void setSmoke(int smoke) {
+        this.smoke = smoke;
     }
 
     public int getSumImgs() {
@@ -103,16 +84,14 @@ public class HistoryData {
         this.sumImgs = sumImgs;
     }
 
-
     @Override
     public String toString() {
         return "HistoryData{" +
                 "auth=" + auth +
                 ", datas=" + datas +
                 ", total=" + total +
-                ", big=" + big +
-                ", medium=" + medium +
-                ", small=" + small +
+                ", fire=" + fire +
+                ", smoke=" + smoke +
                 ", sumImgs=" + sumImgs +
                 '}';
     }

@@ -218,7 +218,9 @@ public class ClassificationFragment extends Fragment {
             @Override
             public void onResponse(Call<Classify> call, Response<Classify> response) {
                 try {
+                    System.out.println(response.body());
                 Classify hs = response.body();
+                    System.out.println(hs);
                 System.out.println(Constants.URL + hs.getFilename());
                 Glide.with(ClassificationFragment.this).load(Constants.URL + hs.getFilename()).into(mImageView);
                 dialog.dismiss();

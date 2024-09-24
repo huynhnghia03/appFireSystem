@@ -432,18 +432,18 @@ public class DetailUserActivity extends AppCompatActivity {
     private void setDataPiechart(HistoryData data) {
         sumimgs.setText(String.valueOf(data.getSumImgs()));
         sumsh.setText(String.valueOf(data.getTotal()));
-        bigs.setText(String.valueOf(data.getBig()));
-        meds.setText(String.valueOf(data.getMedium()));
-        sms.setText(String.valueOf(data.getSmall()));
+//        bigs.setText(String.valueOf(data.getBig()));
+//        meds.setText(String.valueOf(data.getMedium()));
+//        sms.setText(String.valueOf(data.getSmall()));
 
         pieChart_user_dt.clearChart();
 
         if (data.getTotal() == 0) {
             pieChart_user_dt.addPieSlice(new PieModel("No data", 0, Color.parseColor("#FFA739")));
         } else {
-            pieChart_user_dt.addPieSlice(new PieModel("BigShrimp", data.getBig(), Color.parseColor("#FFFFA726")));
-            pieChart_user_dt.addPieSlice(new PieModel("MediumShrimp", data.getMedium(), Color.parseColor("#FF66BB6A")));
-            pieChart_user_dt.addPieSlice(new PieModel("SmallShrimp", data.getSmall(), Color.parseColor("#FFEF5350")));
+//            pieChart_user_dt.addPieSlice(new PieModel("BigShrimp", data.getBig(), Color.parseColor("#FFFFA726")));
+//            pieChart_user_dt.addPieSlice(new PieModel("MediumShrimp", data.getMedium(), Color.parseColor("#FF66BB6A")));
+//            pieChart_user_dt.addPieSlice(new PieModel("SmallShrimp", data.getSmall(), Color.parseColor("#FFEF5350")));
         }
         pieChart_user_dt.startAnimation();
     }
@@ -490,9 +490,9 @@ public class DetailUserActivity extends AppCompatActivity {
 
         summaryRow = hssfSheet.createRow(ad.getDataHistories().size() + 4);
         summaryRow.createCell(1).setCellValue(ad.getDatas().getTotal());
-        summaryRow.createCell(2).setCellValue(ad.getDatas().getBig());
-        summaryRow.createCell(3).setCellValue(ad.getDatas().getMedium());
-        summaryRow.createCell(4).setCellValue(ad.getDatas().getSmall());
+//        summaryRow.createCell(2).setCellValue(ad.getDatas().getBig());
+//        summaryRow.createCell(3).setCellValue(ad.getDatas().getMedium());
+//        summaryRow.createCell(4).setCellValue(ad.getDatas().getSmall());
 
         return hssfWorkbook;
     }

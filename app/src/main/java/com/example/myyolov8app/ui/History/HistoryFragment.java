@@ -165,8 +165,8 @@ public class HistoryFragment extends Fragment {
     }
     private void setData(HistoryData data)
     {
-     tvbgS.setText(""+data.getBig());
-     tvMdS.setText(""+data.getMedium());
+//     tvbgS.setText(""+data.getBig());
+//     tvMdS.setText(""+data.getMedium());
 
 
     if(data.getDatas().size()==0){
@@ -181,12 +181,12 @@ public class HistoryFragment extends Fragment {
     pieChart.addPieSlice(
             new PieModel(
                     "Bình thường",
-                    data.getBig(),
+                    10,
                     Color.parseColor("#FFA726")));
     pieChart.addPieSlice(
             new PieModel(
                     "Khẩn cấp",
-                    data.getMedium(),
+                    10,
                     Color.parseColor("#66BB6A")));
 }
         // To animate the pie chart
