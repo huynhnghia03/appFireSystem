@@ -72,7 +72,7 @@ public class AllUsersFragment extends Fragment {
             arrinusers = new ArrayList<>();
 sumuser=binding.sumUser;
 dectuser=binding.dtUser;
-undectuser=binding.udUser;
+
 lsv_user=binding.lsvUser;
 pieChart_user = binding.userPiechart;
             getIFAllUsers();
